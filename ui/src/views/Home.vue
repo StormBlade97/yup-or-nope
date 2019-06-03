@@ -1,15 +1,19 @@
 <template>
-  <div class="home">
-    <div class="section">
+  <section class="hero is-fullheight">
+    <div class="hero-body">
       <div class="container">
-        <p class="title">Hello World</p>
+        <app-title></app-title>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
+import AppTitle from "@/components/AppTitle.vue";
 export default {
-  name: "home"
+  name: "home",
+  components: {
+    "app-title": AppTitle
+  }
 };
 </script>
