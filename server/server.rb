@@ -14,7 +14,7 @@ def seed_data()
     data
 end
 
-DATA = seed_data[0]
+DATA = seed_data.flatten(1)
 SCORES = []
 
 DATA.size.times do |num|
